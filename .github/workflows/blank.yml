@@ -53,4 +53,4 @@ jobs:
             aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
             aws-region: us-east-1
       - name: Subir Archivo bucket
-        run: aws funciones.py s3 cp s3://bigdata0416/
+        run: aws s3 cp funciones.py s3://bigdata0416/
